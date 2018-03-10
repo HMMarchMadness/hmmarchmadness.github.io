@@ -16,6 +16,26 @@ function pickWinner(winner,nextID){
 		num++;
 		var nextNextID = nextID.substring(0,1)+num.toString()+"AResult";
 	}
+	else if(nextID.substring(1,3)=="1E"||nextID.substring(1,3)=="1F"){
+		var num = parseInt(nextID.substring(1,2));
+		num++;
+		var nextNextID = nextID.substring(0,1)+num.toString()+"CResult";
+	}
+	else if(nextID.substring(1,3)=="1G"||nextID.substring(1,3)=="1H"){
+		var num = parseInt(nextID.substring(1,2));
+		num++;
+		var nextNextID = nextID.substring(0,1)+num.toString()+"DResult";
+	}
+	else if(nextID.substring(1,3)=="2C"||nextID.substring(1,3)=="2D"){
+		var num = parseInt(nextID.substring(1,2));
+		num++;
+		var nextNextID = nextID.substring(0,1)+num.toString()+"BResult";
+	}
+	else if(nextID.substring(1,3)=="3A"||nextID.substring(1,3)=="3B"){
+		var num = parseInt(nextID.substring(1,2));
+		num++;
+		var nextNextID = "WestWinner";
+	}
 	var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
 	var HTMLToAppend = StringToHTML(nextButton);
 	next.appendChild(HTMLToAppend);

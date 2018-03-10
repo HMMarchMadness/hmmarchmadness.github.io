@@ -9,10 +9,16 @@
       margin-right: 50px;
       margin-left: 50px;
     }
+    #WestWinner {
+        margin-left: 1000px;
+    }
   </style>
 </head>
 <body>
   <h1>West Bracket</h1>
+  <div id="WestWinner">
+    <h2>West Winner</h2>
+</div>
 <main id="tournament">
     <ul class="round round-1">
         <li class="spacer">&nbsp;</li>
@@ -41,27 +47,27 @@
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top">Memphis</li>
+        <li class="game game-top"><button onclick="pickWinner('Memphis','W1EResult')">Memphis</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">St Mary's</li>
+        <li class="game game-bottom "><button onclick="pickWinner('St. Marys','W1EResult')">St. Mary's</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top">Mich St</li>
+        <li class="game game-top"><button onclick="pickWinner('Mich St.','W1FResult')">Mich St.</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">Valparaiso</li>
+        <li class="game game-bottom "><button onclick="pickWinner('Valparaiso','W1FResult')">Valparaiso</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top">Creighton</li>
+        <li class="game game-top"><button onclick="pickWinner('Creighton','W1GResult')">Creighton</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">Cincinnati</li>
+        <li class="game game-bottom"><button onclick="pickWinner('Cincinnati','W1GResult')">Cincinnati</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top">Duke</li>
+        <li class="game game-top"><button <button onclick="pickWinner('Duke','W1HResult')">Duke</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">Albany</li>
+        <li class="game game-bottom "><button <button onclick="pickWinner('Albany','W1HResult')">Albany</button></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
@@ -80,15 +86,15 @@
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"></li>
+        <li id="W1EResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom"></li>
+        <li id="W1FResult" class="game game-bottom"></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top "></li>
+        <li id="W1GResult" class="game game-top "></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom"></li>
+        <li id="W1HResult" class="game game-bottom"></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
@@ -101,9 +107,9 @@
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"></li>
+        <li id="W2CResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom"></li>
+        <li id="W2DResult" class="game game-bottom"></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
@@ -112,11 +118,10 @@
         
         <li id="W3AResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "></li>
+        <li id="W3BResult" class="game game-bottom "></li>
         
         <li class="spacer">&nbsp;</li>
-    </ul>  
-
+    </ul>
 </main>
 <script src="main.js"></script>
 </body>
