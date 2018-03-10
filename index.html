@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+  <link rel="stylesheet" href="styles.css">
+  <title></title>
+  <style>
+    #left {
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>West Bracket</h1>
+<main id="tournament">
+    <ul class="round round-1">
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top winner"><button onclick="pickWinner('Louisville','W1AResult')">Louisville</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('NC A&T','W1AResult')">NC A&T</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Colo St.','W1BResult')">Colo St.</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('Missouri','W1BResult')">Missouri</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top "><button onclick="pickWinner('Oklahoma St.','W1CResult')">Oklahoma St.</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom winner"><button onclick="pickWinner('Oregon','W1CResult')">Oregon</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Saint Louis','W1DResult')">Saint Louis</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('New Mexico St.','W1DResult')">New Mexico St.</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top">Memphis</li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom ">St Mary's</li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top">Mich St</li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom ">Valparaiso</li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top">Creighton</li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom ">Cincinnati</li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top">Duke</li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom ">Albany</li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-2">
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W1AResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W1BResult" class="game game-bottom "></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W1CResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W1DResult" class="game game-bottom "></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top "></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-3">
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W2AResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W2BResult" class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-4">
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W3AResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "></li>
+        
+        <li class="spacer">&nbsp;</li>
+    </ul>  
+
+</main>
+<script src="main.js"></script>
+</body>
+</html>
