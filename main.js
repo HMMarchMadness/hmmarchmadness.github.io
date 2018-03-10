@@ -74,7 +74,11 @@ function pickWinner(winner,nextID){
 		var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
 	}
 	else if(nextID=="WestFinal"||nextID=="EastFinal"){
-		var nextNextID = "WestFinal"; 
+		var nextNextID = "Winner"; 
+		var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
+	}
+	else if(nextID=="Winner"){
+		var nextNextID = "Winner"; 
 		var nextButton = winner;
 	}
 	//var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
