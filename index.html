@@ -9,7 +9,7 @@
       margin-right: 50px;
       margin-left: 50px;
     }
-    #WestWinner {
+    #winnerz {
         margin-left: 1000px;
     }
   </style>
@@ -17,10 +17,12 @@
 <body>
 <div id="West">
   <h1>West Bracket</h1>
-    <div id="WestWinner">
+  <div id="winnerz">
+    <div id="WWinner">
         <h2>West Winner</h2>
         <p style="color:green">(click the button that will appear below to send the team to the final four, at the bottom of the page)</p>
     </div>
+</div>
 <br>
 <button onclick="resubmit()">Restart</button>
 <p style="color:red">WARNING: Restarting will delete ALL your entries</p>
@@ -133,10 +135,12 @@
 </div>
 <div id="Midwest">
   <h1>Midwest Bracket</h1>
-    <div id="WestWinner">
+  <div id="winnerz">
+    <div id="CWinner">
         <h2>Midwest Winner</h2>
         <p style="color:green">(click the button that will appear below to send the team to the final four, at the bottom of the page)</p>
     </div>
+</div>
 <br>
 <button onclick="resubmit()">Restart</button>
 <p style="color:red">WARNING: Restarting will delete ALL your entries</p>
@@ -144,102 +148,102 @@
     <ul class="round round-1">
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top winner"><button onclick="pickWinner('Louisville','W1AResult')">Louisville</button></li>
+        <li class="game game-top winner"><button onclick="pickWinner('Louisville','C1AResult')">Louisville</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button onclick="pickWinner('NC A&T','W1AResult')">NC A&T</button></li>
+        <li class="game game-bottom "><button onclick="pickWinner('NC A&T','C1AResult')">NC A&T</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button onclick="pickWinner('Colo St.','W1BResult')">Colo St.</button></li>
+        <li class="game game-top"><button onclick="pickWinner('Colo St.','C1BResult')">Colo St.</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button onclick="pickWinner('Missouri','W1BResult')">Missouri</button></li>
+        <li class="game game-bottom "><button onclick="pickWinner('Missouri','C1BResult')">Missouri</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top "><button onclick="pickWinner('Oklahoma St.','W1CResult')">Oklahoma St.</button></li>
+        <li class="game game-top "><button onclick="pickWinner('Oklahoma St.','C1CResult')">Oklahoma St.</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom winner"><button onclick="pickWinner('Oregon','W1CResult')">Oregon</button></li>
+        <li class="game game-bottom winner"><button onclick="pickWinner('Oregon','C1CResult')">Oregon</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button onclick="pickWinner('Saint Louis','W1DResult')">Saint Louis</button></li>
+        <li class="game game-top"><button onclick="pickWinner('Saint Louis','C1DResult')">Saint Louis</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button onclick="pickWinner('New Mexico St.','W1DResult')">New Mexico St.</button></li>
+        <li class="game game-bottom "><button onclick="pickWinner('New Mexico St.','C1DResult')">New Mexico St.</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button onclick="pickWinner('Memphis','W1EResult')">Memphis</button></li>
+        <li class="game game-top"><button onclick="pickWinner('Memphis','C1EResult')">Memphis</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button onclick="pickWinner('St. Marys','W1EResult')">St. Mary's</button></li>
+        <li class="game game-bottom "><button onclick="pickWinner('St. Marys','C1EResult')">St. Mary's</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button onclick="pickWinner('Mich St.','W1FResult')">Mich St.</button></li>
+        <li class="game game-top"><button onclick="pickWinner('Mich St.','C1FResult')">Mich St.</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button onclick="pickWinner('Valparaiso','W1FResult')">Valparaiso</button></li>
+        <li class="game game-bottom "><button onclick="pickWinner('Valparaiso','C1FResult')">Valparaiso</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button onclick="pickWinner('Creighton','W1GResult')">Creighton</button></li>
+        <li class="game game-top"><button onclick="pickWinner('Creighton','C1GResult')">Creighton</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom"><button onclick="pickWinner('Cincinnati','W1GResult')">Cincinnati</button></li>
+        <li class="game game-bottom"><button onclick="pickWinner('Cincinnati','C1GResult')">Cincinnati</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button <button onclick="pickWinner('Duke','W1HResult')">Duke</button></li>
+        <li class="game game-top"><button <button onclick="pickWinner('Duke','C1HResult')">Duke</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button <button onclick="pickWinner('Albany','W1HResult')">Albany</button></li>
+        <li class="game game-bottom "><button <button onclick="pickWinner('Albany','C1HResult')">Albany</button></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
     <ul class="round round-2">
         <li class="spacer">&nbsp;</li>
         
-        <li id="W1AResult" class="game game-top"></li>
+        <li id="C1AResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W1BResult" class="game game-bottom "></li>
+        <li id="C1BResult" class="game game-bottom "></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li id="W1CResult" class="game game-top"></li>
+        <li id="CW1CResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W1DResult" class="game game-bottom "></li>
+        <li id="C1DResult" class="game game-bottom "></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li id="W1EResult" class="game game-top"></li>
+        <li id="C1EResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W1FResult" class="game game-bottom"></li>
+        <li id="C1FResult" class="game game-bottom"></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li id="W1GResult" class="game game-top "></li>
+        <li id="C1GResult" class="game game-top "></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W1HResult" class="game game-bottom"></li>
+        <li id="C1HResult" class="game game-bottom"></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
     <ul class="round round-3">
         <li class="spacer">&nbsp;</li>
         
-        <li id="W2AResult" class="game game-top"></li>
+        <li id="C2AResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W2BResult" class="game game-bottom"></li>
+        <li id="C2BResult" class="game game-bottom"></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li id="W2CResult" class="game game-top"></li>
+        <li id="C2CResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W2DResult" class="game game-bottom"></li>
+        <li id="C2DResult" class="game game-bottom"></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
     <ul class="round round-4">
         <li class="spacer">&nbsp;</li>
         
-        <li id="W3AResult" class="game game-top"></li>
+        <li id="C3AResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W3BResult" class="game game-bottom "></li>
+        <li id="C3BResult" class="game game-bottom "></li>
         
         <li class="spacer">&nbsp;</li>
     </ul>
@@ -249,10 +253,12 @@
 </div>
 <div id="East">
   <h1>East Bracket</h1>
-    <div id="WestWinner">
+  <div id="winnerz">
+    <div id="EWinner">
         <h2>East Winner</h2>
         <p style="color:green">(click the button that will appear below to send the team to the final four, at the bottom of the page)</p>
     </div>
+</div>
 <br>
 <button onclick="resubmit()">Restart</button>
 <p style="color:red">WARNING: Restarting will delete ALL your entries</p>
@@ -260,102 +266,102 @@
     <ul class="round round-1">
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top winner"><button onclick="pickWinner('Louisville','W1AResult')">Louisville</button></li>
+        <li class="game game-top winner"><button onclick="pickWinner('Louisville','E1AResult')">Louisville</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button onclick="pickWinner('NC A&T','W1AResult')">NC A&T</button></li>
+        <li class="game game-bottom "><button onclick="pickWinner('NC A&T','E1AResult')">NC A&T</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button onclick="pickWinner('Colo St.','W1BResult')">Colo St.</button></li>
+        <li class="game game-top"><button onclick="pickWinner('Colo St.','E1BResult')">Colo St.</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button onclick="pickWinner('Missouri','W1BResult')">Missouri</button></li>
+        <li class="game game-bottom "><button onclick="pickWinner('Missouri','E1BResult')">Missouri</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top "><button onclick="pickWinner('Oklahoma St.','W1CResult')">Oklahoma St.</button></li>
+        <li class="game game-top "><button onclick="pickWinner('Oklahoma St.','E1CResult')">Oklahoma St.</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom winner"><button onclick="pickWinner('Oregon','W1CResult')">Oregon</button></li>
+        <li class="game game-bottom winner"><button onclick="pickWinner('Oregon','E1CResult')">Oregon</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button onclick="pickWinner('Saint Louis','W1DResult')">Saint Louis</button></li>
+        <li class="game game-top"><button onclick="pickWinner('Saint Louis','E1DResult')">Saint Louis</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button onclick="pickWinner('New Mexico St.','W1DResult')">New Mexico St.</button></li>
+        <li class="game game-bottom "><button onclick="pickWinner('New Mexico St.','E1DResult')">New Mexico St.</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button onclick="pickWinner('Memphis','W1EResult')">Memphis</button></li>
+        <li class="game game-top"><button onclick="pickWinner('Memphis','E1EResult')">Memphis</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button onclick="pickWinner('St. Marys','W1EResult')">St. Mary's</button></li>
+        <li class="game game-bottom "><button onclick="pickWinner('St. Marys','E1EResult')">St. Mary's</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button onclick="pickWinner('Mich St.','W1FResult')">Mich St.</button></li>
+        <li class="game game-top"><button onclick="pickWinner('Mich St.','E1FResult')">Mich St.</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button onclick="pickWinner('Valparaiso','W1FResult')">Valparaiso</button></li>
+        <li class="game game-bottom "><button onclick="pickWinner('Valparaiso','E1FResult')">Valparaiso</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button onclick="pickWinner('Creighton','W1GResult')">Creighton</button></li>
+        <li class="game game-top"><button onclick="pickWinner('Creighton','E1GResult')">Creighton</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom"><button onclick="pickWinner('Cincinnati','W1GResult')">Cincinnati</button></li>
+        <li class="game game-bottom"><button onclick="pickWinner('Cincinnati','E1GResult')">Cincinnati</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button <button onclick="pickWinner('Duke','W1HResult')">Duke</button></li>
+        <li class="game game-top"><button <button onclick="pickWinner('Duke','E1HResult')">Duke</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button <button onclick="pickWinner('Albany','W1HResult')">Albany</button></li>
+        <li class="game game-bottom "><button <button onclick="pickWinner('Albany','E1HResult')">Albany</button></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
     <ul class="round round-2">
         <li class="spacer">&nbsp;</li>
         
-        <li id="W1AResult" class="game game-top"></li>
+        <li id="E1AResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W1BResult" class="game game-bottom "></li>
+        <li id="E1BResult" class="game game-bottom "></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li id="W1CResult" class="game game-top"></li>
+        <li id="E1CResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W1DResult" class="game game-bottom "></li>
+        <li id="E1DResult" class="game game-bottom "></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li id="W1EResult" class="game game-top"></li>
+        <li id="E1EResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W1FResult" class="game game-bottom"></li>
+        <li id="E1FResult" class="game game-bottom"></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li id="W1GResult" class="game game-top "></li>
+        <li id="E1GResult" class="game game-top "></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W1HResult" class="game game-bottom"></li>
+        <li id="E1HResult" class="game game-bottom"></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
     <ul class="round round-3">
         <li class="spacer">&nbsp;</li>
         
-        <li id="W2AResult" class="game game-top"></li>
+        <li id="E2AResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W2BResult" class="game game-bottom"></li>
+        <li id="E2BResult" class="game game-bottom"></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li id="W2CResult" class="game game-top"></li>
+        <li id="E2CResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W2DResult" class="game game-bottom"></li>
+        <li id="E2DResult" class="game game-bottom"></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
     <ul class="round round-4">
         <li class="spacer">&nbsp;</li>
         
-        <li id="W3AResult" class="game game-top"></li>
+        <li id="E3AResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W3BResult" class="game game-bottom "></li>
+        <li id="E3BResult" class="game game-bottom "></li>
         
         <li class="spacer">&nbsp;</li>
     </ul>
@@ -365,10 +371,12 @@
 </div>
 <div id="Mideast">
   <h1>Mideast Bracket</h1>
-    <div id="WestWinner">
+  <div id="winnerz">
+    <div id="MWinner">
         <h2>Mideast Winner</h2>
         <p style="color:green">(click the button that will appear below to send the team to the final four, at the bottom of the page)</p>
     </div>
+</div>
 <br>
 <button onclick="resubmit()">Restart</button>
 <p style="color:red">WARNING: Restarting will delete ALL your entries</p>
@@ -376,102 +384,102 @@
     <ul class="round round-1">
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top winner"><button onclick="pickWinner('Louisville','W1AResult')">Louisville</button></li>
+        <li class="game game-top winner"><button onclick="pickWinner('Louisville','M1AResult')">Louisville</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button onclick="pickWinner('NC A&T','W1AResult')">NC A&T</button></li>
+        <li class="game game-bottom "><button onclick="pickWinner('NC A&T','M1AResult')">NC A&T</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button onclick="pickWinner('Colo St.','W1BResult')">Colo St.</button></li>
+        <li class="game game-top"><button onclick="pickWinner('Colo St.','M1BResult')">Colo St.</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button onclick="pickWinner('Missouri','W1BResult')">Missouri</button></li>
+        <li class="game game-bottom "><button onclick="pickWinner('Missouri','M1BResult')">Missouri</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top "><button onclick="pickWinner('Oklahoma St.','W1CResult')">Oklahoma St.</button></li>
+        <li class="game game-top "><button onclick="pickWinner('Oklahoma St.','M1CResult')">Oklahoma St.</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom winner"><button onclick="pickWinner('Oregon','W1CResult')">Oregon</button></li>
+        <li class="game game-bottom winner"><button onclick="pickWinner('Oregon','M1CResult')">Oregon</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button onclick="pickWinner('Saint Louis','W1DResult')">Saint Louis</button></li>
+        <li class="game game-top"><button onclick="pickWinner('Saint Louis','M1DResult')">Saint Louis</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button onclick="pickWinner('New Mexico St.','W1DResult')">New Mexico St.</button></li>
+        <li class="game game-bottom "><button onclick="pickWinner('New Mexico St.','M1DResult')">New Mexico St.</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button onclick="pickWinner('Memphis','W1EResult')">Memphis</button></li>
+        <li class="game game-top"><button onclick="pickWinner('Memphis','M1EResult')">Memphis</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button onclick="pickWinner('St. Marys','W1EResult')">St. Mary's</button></li>
+        <li class="game game-bottom "><button onclick="pickWinner('St. Marys','M1EResult')">St. Mary's</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button onclick="pickWinner('Mich St.','W1FResult')">Mich St.</button></li>
+        <li class="game game-top"><button onclick="pickWinner('Mich St.','M1FResult')">Mich St.</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button onclick="pickWinner('Valparaiso','W1FResult')">Valparaiso</button></li>
+        <li class="game game-bottom "><button onclick="pickWinner('Valparaiso','M1FResult')">Valparaiso</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button onclick="pickWinner('Creighton','W1GResult')">Creighton</button></li>
+        <li class="game game-top"><button onclick="pickWinner('Creighton','M1GResult')">Creighton</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom"><button onclick="pickWinner('Cincinnati','W1GResult')">Cincinnati</button></li>
+        <li class="game game-bottom"><button onclick="pickWinner('Cincinnati','M1GResult')">Cincinnati</button></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top"><button <button onclick="pickWinner('Duke','W1HResult')">Duke</button></li>
+        <li class="game game-top"><button <button onclick="pickWinner('Duke','M1HResult')">Duke</button></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom "><button <button onclick="pickWinner('Albany','W1HResult')">Albany</button></li>
+        <li class="game game-bottom "><button <button onclick="pickWinner('Albany','M1HResult')">Albany</button></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
     <ul class="round round-2">
         <li class="spacer">&nbsp;</li>
         
-        <li id="W1AResult" class="game game-top"></li>
+        <li id="M1AResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W1BResult" class="game game-bottom "></li>
+        <li id="M1BResult" class="game game-bottom "></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li id="W1CResult" class="game game-top"></li>
+        <li id="M1CResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W1DResult" class="game game-bottom "></li>
+        <li id="M1DResult" class="game game-bottom "></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li id="W1EResult" class="game game-top"></li>
+        <li id="M1EResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W1FResult" class="game game-bottom"></li>
+        <li id="M1FResult" class="game game-bottom"></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li id="W1GResult" class="game game-top "></li>
+        <li id="M1GResult" class="game game-top "></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W1HResult" class="game game-bottom"></li>
+        <li id="M1HResult" class="game game-bottom"></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
     <ul class="round round-3">
         <li class="spacer">&nbsp;</li>
         
-        <li id="W2AResult" class="game game-top"></li>
+        <li id="M2AResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W2BResult" class="game game-bottom"></li>
+        <li id="M2BResult" class="game game-bottom"></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li id="W2CResult" class="game game-top"></li>
+        <li id="M2CResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W2DResult" class="game game-bottom"></li>
+        <li id="M2DResult" class="game game-bottom"></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
     <ul class="round round-4">
         <li class="spacer">&nbsp;</li>
         
-        <li id="W3AResult" class="game game-top"></li>
+        <li id="M3AResult" class="game game-top"></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li id="W3BResult" class="game game-bottom "></li>
+        <li id="M3BResult" class="game game-bottom "></li>
         
         <li class="spacer">&nbsp;</li>
     </ul>
@@ -481,7 +489,7 @@
 </div>
 <div id="FinalFour">
   <h1>Final Four Bracket</h1>
-    <div id="WestWinner">
+    <div id="winnerz">
         <div id="Winner">
         <h2>March Madness Winner</h2>
         </div>
