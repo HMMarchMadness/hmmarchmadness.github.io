@@ -15,10 +15,14 @@
   </style>
 </head>
 <body>
+<div id="West">
   <h1>West Bracket</h1>
-  <div id="WestWinner">
-    <h2>West Winner</h2>
-</div>
+    <div id="WestWinner">
+        <h2>West Winner</h2>
+    </div>
+<br>
+<button onclick="resubmit()">Restart</button>
+<p style="color:red">WARNING: Restarting will delete ALL your entries</p>
 <main id="tournament">
     <ul class="round round-1">
         <li class="spacer">&nbsp;</li>
@@ -123,6 +127,407 @@
         <li class="spacer">&nbsp;</li>
     </ul>
 </main>
+<br>
+<br>
+</div>
+<div id="Midwest">
+  <h1>Midwest Bracket</h1>
+    <div id="WestWinner">
+        <h2>Midwest Winner</h2>
+    </div>
+<br>
+<button onclick="resubmit()">Restart</button>
+<p style="color:red">WARNING: Restarting will delete ALL your entries</p>
+<main id="tournament">
+    <ul class="round round-1">
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top winner"><button onclick="pickWinner('Louisville','W1AResult')">Louisville</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('NC A&T','W1AResult')">NC A&T</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Colo St.','W1BResult')">Colo St.</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('Missouri','W1BResult')">Missouri</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top "><button onclick="pickWinner('Oklahoma St.','W1CResult')">Oklahoma St.</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom winner"><button onclick="pickWinner('Oregon','W1CResult')">Oregon</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Saint Louis','W1DResult')">Saint Louis</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('New Mexico St.','W1DResult')">New Mexico St.</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Memphis','W1EResult')">Memphis</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('St. Marys','W1EResult')">St. Mary's</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Mich St.','W1FResult')">Mich St.</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('Valparaiso','W1FResult')">Valparaiso</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Creighton','W1GResult')">Creighton</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom"><button onclick="pickWinner('Cincinnati','W1GResult')">Cincinnati</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button <button onclick="pickWinner('Duke','W1HResult')">Duke</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button <button onclick="pickWinner('Albany','W1HResult')">Albany</button></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-2">
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W1AResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W1BResult" class="game game-bottom "></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W1CResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W1DResult" class="game game-bottom "></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W1EResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W1FResult" class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W1GResult" class="game game-top "></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W1HResult" class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-3">
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W2AResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W2BResult" class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W2CResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W2DResult" class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-4">
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W3AResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W3BResult" class="game game-bottom "></li>
+        
+        <li class="spacer">&nbsp;</li>
+    </ul>
+</main>
+<br>
+<br>
+</div>
+<div id="East">
+  <h1>East Bracket</h1>
+    <div id="WestWinner">
+        <h2>East Winner</h2>
+    </div>
+<br>
+<button onclick="resubmit()">Restart</button>
+<p style="color:red">WARNING: Restarting will delete ALL your entries</p>
+<main id="tournament">
+    <ul class="round round-1">
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top winner"><button onclick="pickWinner('Louisville','W1AResult')">Louisville</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('NC A&T','W1AResult')">NC A&T</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Colo St.','W1BResult')">Colo St.</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('Missouri','W1BResult')">Missouri</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top "><button onclick="pickWinner('Oklahoma St.','W1CResult')">Oklahoma St.</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom winner"><button onclick="pickWinner('Oregon','W1CResult')">Oregon</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Saint Louis','W1DResult')">Saint Louis</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('New Mexico St.','W1DResult')">New Mexico St.</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Memphis','W1EResult')">Memphis</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('St. Marys','W1EResult')">St. Mary's</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Mich St.','W1FResult')">Mich St.</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('Valparaiso','W1FResult')">Valparaiso</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Creighton','W1GResult')">Creighton</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom"><button onclick="pickWinner('Cincinnati','W1GResult')">Cincinnati</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button <button onclick="pickWinner('Duke','W1HResult')">Duke</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button <button onclick="pickWinner('Albany','W1HResult')">Albany</button></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-2">
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W1AResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W1BResult" class="game game-bottom "></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W1CResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W1DResult" class="game game-bottom "></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W1EResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W1FResult" class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W1GResult" class="game game-top "></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W1HResult" class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-3">
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W2AResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W2BResult" class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W2CResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W2DResult" class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-4">
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W3AResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W3BResult" class="game game-bottom "></li>
+        
+        <li class="spacer">&nbsp;</li>
+    </ul>
+</main>
+<br>
+<br>
+</div>
+<div id="Mideast">
+  <h1>Mideast Bracket</h1>
+    <div id="WestWinner">
+        <h2>Mideast Winner</h2>
+    </div>
+<br>
+<button onclick="resubmit()">Restart</button>
+<p style="color:red">WARNING: Restarting will delete ALL your entries</p>
+<main id="tournament">
+    <ul class="round round-1">
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top winner"><button onclick="pickWinner('Louisville','W1AResult')">Louisville</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('NC A&T','W1AResult')">NC A&T</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Colo St.','W1BResult')">Colo St.</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('Missouri','W1BResult')">Missouri</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top "><button onclick="pickWinner('Oklahoma St.','W1CResult')">Oklahoma St.</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom winner"><button onclick="pickWinner('Oregon','W1CResult')">Oregon</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Saint Louis','W1DResult')">Saint Louis</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('New Mexico St.','W1DResult')">New Mexico St.</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Memphis','W1EResult')">Memphis</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('St. Marys','W1EResult')">St. Mary's</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Mich St.','W1FResult')">Mich St.</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button onclick="pickWinner('Valparaiso','W1FResult')">Valparaiso</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button onclick="pickWinner('Creighton','W1GResult')">Creighton</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom"><button onclick="pickWinner('Cincinnati','W1GResult')">Cincinnati</button></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li class="game game-top"><button <button onclick="pickWinner('Duke','W1HResult')">Duke</button></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom "><button <button onclick="pickWinner('Albany','W1HResult')">Albany</button></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-2">
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W1AResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W1BResult" class="game game-bottom "></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W1CResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W1DResult" class="game game-bottom "></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W1EResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W1FResult" class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W1GResult" class="game game-top "></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W1HResult" class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-3">
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W2AResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W2BResult" class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W2CResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W2DResult" class="game game-bottom"></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-4">
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="W3AResult" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="W3BResult" class="game game-bottom "></li>
+        
+        <li class="spacer">&nbsp;</li>
+    </ul>
+</main>
+<br>
+<br>
+</div>
+<div id="FinalFour">
+  <h1>Final Four Bracket</h1>
+    <div id="Winner">
+        <h2>March Madness Winner</h2>
+    </div>
+<br>
+<button onclick="resubmit()">Restart</button>
+<p style="color:red">WARNING: Restarting will delete ALL your entries</p>
+<main id="tournament">
+    <ul class="round round-1">
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="EastFinalist" class="game game-top winner"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="MideastFinalist" class="game game-bottom "></li>
+
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="WestFinalist" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="MidwestFinalist" class="game game-bottom "></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-2">
+        <li class="spacer">&nbsp;</li>
+        
+        <li id="EastFinal" class="game game-top"></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li id="WestFinal" class="game game-bottom "></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+</main>
+<br>
+<br>
+</div>
+<input type="text" id="username" name="name" placeholder="Your Name"><button onclick="submit()">Submit</button>
+<p style="color:yellow;background-color: black;">Make sure to double check all your entries before submitting, as you won't be able to recover them once submitting</p>
+
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBblELeoRGaA2Mz2NVxSweIXE_5x8oLN34",
+    authDomain: "hmmarchmadnes.firebaseapp.com",
+    databaseURL: "https://hmmarchmadnes.firebaseio.com",
+    projectId: "hmmarchmadnes",
+    storageBucket: "hmmarchmadnes.appspot.com",
+    messagingSenderId: "155146367930"
+  };
+  firebase.initializeApp(config);
+</script>
 <script src="main.js"></script>
 </body>
 </html>
