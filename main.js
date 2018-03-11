@@ -102,7 +102,11 @@ function pickWinner(winner,nextID){
 	//var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
 	var HTMLToAppend = StringToHTML(nextButton);
 	next.appendChild(HTMLToAppend);
-	console.log(nextButton);
+	console.log(submission);
+	console.log(next.id);
+	if(submission.includes(next.id)){
+		submission = submission.replace((submission.substring((submission.indexOf(next.id)-1),(submission.indexOf(',',(submission.indexOf(next.id))))+1)),'');
+	}
 	submission = submission + '"'+nextID+'":"'+winner+'",';
 }
 
