@@ -3,6 +3,7 @@ var name = '';
 var database = firebase.database();
 function pickWinner(winner,nextID){
 	var next = document.getElementById(nextID);
+	next.innerHTML = '';
 	if(nextID.substring(1,3)=="1A"||nextID.substring(1,3)=="1B"){
 		var num = parseInt(nextID.substring(1,2));
 		num++;
