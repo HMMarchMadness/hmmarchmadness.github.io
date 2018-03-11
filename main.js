@@ -42,7 +42,16 @@ function pickWinner(winner,nextID){
 	else if(nextID.substring(1,3)=="3A"||nextID.substring(1,3)=="3B"){
 		var num = parseInt(nextID.substring(1,2));
 		num++;
-		var nextNextID = nextID.substring(0,1)+"Winner"; 
+		if(nextID=='WWinner')
+			var nextNextID='WestFinalist';
+		else if(nextID='CWinner')
+			var nextNextID='MidwestFinalist'
+		else if(nextID='EWinner')
+			var nextNextID='EastFinalist'
+		else if(nextID='MWinner')
+			var nextNextID='MideastFinalist'
+		
+		//var nextNextID = nextID.substring(0,1)+"Winner"; 
 		var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
 	}
 	else if(nextID=="WWinner"){
