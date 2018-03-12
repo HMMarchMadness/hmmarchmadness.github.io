@@ -43,63 +43,48 @@ function pickWinner(winner,nextID){
 	else if(nextID.substring(1,3)=="3A"||nextID.substring(1,3)=="3B"){
 		if(nextID.substring(0,1)=='W')
 			var nextNextID='WestFinalist';
-		else if(nextID.substring(0,1)=='C')
+		else if(nextID.substring(0,1)=='M')
 			var nextNextID='MidwestFinalist'
 		else if(nextID.substring(0,1)=='E')
 			var nextNextID='EastFinalist'
-		else if(nextID.substring(0,1)=='M')
-			var nextNextID='MideastFinalist'
-		var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
-	}
-	else if(nextID=="WWinner"){
-		var nextNextID = "WestFinalist"; 
-		var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
-	}
-	else if(nextID=="CWinner"){
-		var nextNextID = "MidwestFinalist"; 
-		var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
-	}
-	else if(nextID=="EWinner"){
-		var nextNextID = "EastFinalist"; 
-		var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
-	}
-	else if(nextID=="MWinner"){
-		var nextNextID = "MideastFinalist"; 
+		else if(nextID.substring(0,1)=='S')
+			var nextNextID='SouthFinalist'
 		var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
 	}
 	else if(nextID=="WestFinalist"){
-		var nextNextID = "WestFinal";
-		document.getElementById("WestConfrenceWinner").innerHTML=winner; 
+		var nextNextID = "SouthWestFinal";
+		document.getElementById("WestConfrenceWinner").innerHTML=winner;
 		var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
 	}
 	else if(nextID=="MidwestFinalist"){
-		var nextNextID = "WestFinal";
-		document.getElementById("MidwestConfrenceWinner").innerHTML=winner; 
+		var nextNextID = "MidwestEastFinal";
+		document.getElementById("MidwestConfrenceWinner").innerHTML=winner;
 		var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
 	}
 	else if(nextID=="EastFinalist"){
-		var nextNextID = "EastFinal";
-		document.getElementById("EastConfrenceWinner").innerHTML=winner; 
+		var nextNextID = "MidwestEastFinal";
+		document.getElementById("EastConfrenceWinner").innerHTML=winner;
 		var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
 	}
-	else if(nextID=="MideastFinalist"){
-		var nextNextID = "EastFinal";
-		document.getElementById("MideastConfrenceWinner").innerHTML=winner; 
+	else if(nextID=="SouthFinalist"){
+		var nextNextID = "SouthWestFinal";
+		document.getElementById("SouthConfrenceWinner").innerHTML=winner;
 		var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
 	}
 	else if(nextID=="EastWinner"){
-		var nextNextID = "EastFinal"; 
+		var nextNextID = "MidwestEastFinal";
 		var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
 	}
-	else if(nextID=="WestFinal"||nextID=="EastFinal"){
-		var nextNextID = "Winner"; 
+	else if(nextID=="SouthWestFinal"||nextID=="MidwestEastFinal"){
+		var nextNextID = "Winner";
 		var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
 	}
 	else if(nextID=="Winner"){
-		var nextNextID = "Winner"; 
+		var nextNextID = "Winner";
 		var nextButton = winner;
 	}
 	//var nextButton = "<button onclick=\"pickWinner('"+winner+"','"+nextNextID+"'"+")\">"+winner+"</button>";
+	console.log(nextButton)
 	var HTMLToAppend = StringToHTML(nextButton);
 	next.appendChild(HTMLToAppend);
 	if(submission.includes(next.id)){
