@@ -13,7 +13,9 @@
 </head>
 <body>
     <h1>Instructions</h1>
-    <p>Scroll down the page to find West, Midwest, East, and South brackets. Each team's button has to parts, the first is the name of the team, and the number in the parenthesis is their seed. When you click on a team, they are moved forward to the next round. When you click on the team that advances past the region's finals, they show up as the winner of the region and automatically get moved to the Final Four bracket. The Final Four bracket is at the bottom of the page. If you make a mistake, you can just click the other team through that match and all subsequent ones and the brackets should update. However, if you have made bad selections for several rounds, there is also the option of the <code>Restart</code> buttons at the top of every region's bracket. Be careful, though, as you are making your choices, for <b style="color:red">hitting the <code>Restart</code> button will erase all your entries in EVERY bracket</b>. Once you are done filling out your choices, double check them, and fill your full name out at the bottom and hit the <code>Submit</code> button</p>
+    <p>Scroll down the page to find West, Midwest, East, and South brackets. Each team's button has two parts, the first is the name of the team, and the number in the parenthesis is their seed. A bigger seed number means that they are ranked lower (less likely to win). To advance a team to the next round, you click on the button with their name and seed. When you click on the team that advances past the region's finals, they show up as the winner of the region and automatically get moved to the Final Four bracket at the bottom of this page. If you accidentally click the wrong button for a game, you can just click the other team's button but ensure that all subsequent games do not have the eliminated team. If you would like to start the bracket over, there are also Restart buttons at the top of every region's bracket. Note that hitting the Restart button will erase all your entries in EVERY bracket. At the bottom of the page you can predict the total number of points earned in the championship game. Once you are done filling out your choices, double check them, and fill your full name out at the bottom and hit the Submit button. Each student may only submit one bracket. We will ignore any submissions after your first in scoring.
+    <br><br>
+    The number of points you receive for predicting the winner corresponds to the round number (e.g. round 1 winners are worth 1 point, round 2 winners are worth 2 points, round 3 winners are worth 3 points, and so on). If you correctly predict that there will be an upset (the team with a lower seed wins), the number of points you receive for that game doubles (e.g. if you predict in round 3 that the lower seeded team in a game will win and they do win, you will get 6 points for that game). If two people get the same score, the prediction for the total number of points in the championship game will serve as a tiebreaker.</p>
 <br>
 <br>
 <div id="West">
@@ -545,15 +547,20 @@
     </ul>
 </main>
 <h2>March Madness Winner:</h2>
+
         <div id="Winner">
         
         </div>
+        How many total points do you think will be scored in the championship game?
+<input type="text" id="championshipScore" name="score" placeholder="Number of Points">
 <br>
 <br>
 </div>
 <input type="text" id="username" name="name" placeholder="Your Full Name"><button onclick="submit()">Submit</button>
 <p style="color:yellow;background-color: black;">Make sure to double check all your entries before submitting, as you won't be able to recover them once submitting</p>
-
+<br>
+<br>
+<footer><center>Made for the Horace Mann School Community Council by Pratham Gandhi</center></footer>
 <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
 <script>
   // Initialize Firebase
