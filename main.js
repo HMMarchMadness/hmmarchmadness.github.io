@@ -102,8 +102,8 @@ function StringToHTML(html) {
 
 function submit(){
 	name = document.getElementById("username").value;
-	//submission = submission + "'name':'"+ (document.getElementById("username").value)+"'";
-	submission = submission.substring(0,submission.length-1);
+	submission = submission + '"ChampionshipScore":"'+ (document.getElementById("championshipScore").value)+'"';
+	//submission = submission.substring(0,submission.length-1);
 	submission = submission + "}";
 	var submit = JSON.parse(submission);
 	writeToDB(submit);
