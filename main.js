@@ -102,12 +102,19 @@ function StringToHTML(html) {
 
 function submit(){
 	name = document.getElementById("username").value;
-	submission = submission + '"ChampionshipScore":"'+ (document.getElementById("championshipScore").value)+'"';
-	//submission = submission.substring(0,submission.length-1);
-	submission = submission + "}";
-	var submit = JSON.parse(submission);
-	writeToDB(submit);
-	complete();
+	console.log(name);
+	if(name!=""){
+		submission = submission + '"ChampionshipScore":"'+ (document.getElementById("championshipScore").value)+'"';
+		//submission = submission.substring(0,submission.length-1);
+		submission = submission + "}";
+		var submit = JSON.parse(submission);
+		writeToDB(submit);
+		complete();
+	}
+	else{
+		document.getElementById("error").innerHTML = "YOU<b> MUST </b>ENTER YOUR NAME BEFORE SUBMITTING"
+	}
+	
 }
 
 function writeToDB(obj){
